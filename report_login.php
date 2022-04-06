@@ -6,7 +6,7 @@ require "class.php";
 //$files = glob('./account/*.txt');
 $chat_id = $argv['1'];
 $id_target = $argv['2'];
-$proxy = 'proxy:portprox';
+$proxy = 'proxy:portprox'; // pemanggilan proxy tidak valid, melainkan tidak ada yang dipanggil melalui function ini.
 $proxyauth = null;
 //print_r($files);
 $gagal = 0;
@@ -165,7 +165,7 @@ foreach ($xlist as $file) {
     curl_close($ch);
 
     file_put_contents("php://stderr", "SUCCESS REPORT BY $username  ✅\n");
-    pesan("SUCCESS REPORT BY $username  ✅\n");
+    pesan("SUCCESS REPORT BY $username  ✅\n"); // hasil output ini adalah hasil dari request login, bukan request reports
     //file_put_contents("php://stderr", "SUCCESS REPORT BY $username  ✅\n");
     $berhasil++;
     fwrite(fopen($logs, "a"), "SUCCESS REPORT BY $username  \n");
