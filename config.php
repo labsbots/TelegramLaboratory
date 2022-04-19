@@ -8,7 +8,7 @@ if (empty($url['path'])) {
     $server = 'localhost';
     $username = 'root';
     $password = "";
-    $db = "reportig";
+    $db = "reportig"; // server reporting instaports
 } else {
     $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
