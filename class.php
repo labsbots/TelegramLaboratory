@@ -1,6 +1,6 @@
 <?php
 include __DIR__ . '/vendor/autoload.php';
-
+ 
 function current_url()
 {
     $url      = "https://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
