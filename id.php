@@ -2,7 +2,7 @@
 
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, 'https://www.instagram.com/rdwn7298_/?__a=1');
+curl_setopt($ch, CURLOPT_URL, 'https://www.instagram.com/username/?__a=1');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 //curl_setopt($ch, CURLOPT_POST, 1);
 //curl_setopt($ch, CURLOPT_POSTFIELDS, $datas);
