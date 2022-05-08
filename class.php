@@ -1,5 +1,5 @@
 <?php
-include __DIR__ . '/vendor/autoload.php';
+include __DIR__ . '/vendor/load.php';
  
 function current_url()
 {
